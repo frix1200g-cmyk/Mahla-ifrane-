@@ -7,12 +7,11 @@
 <style>
 body{
   margin:0;
-  font-family: Arial;
+  font-family:Arial;
   background:#f5f5f5;
   text-align:center;
 }
 
-/* HEADER */
 .header{
   height:100vh;
   background:url("https://upload.wikimedia.org/wikipedia/commons/3/3e/Ifrane_lion.jpg") center/cover;
@@ -24,48 +23,29 @@ body{
 }
 
 .header h1{
-  font-size:100px;
+  font-size:90px;
   margin:0;
-  animation: glow 2s infinite alternate;
+  animation:glow 2s infinite alternate;
 }
 
-.header p{
-  font-size:20px;
-}
-
-/* EFFECT */
 @keyframes glow{
-  from{
-    text-shadow:0 0 10px #fff;
-  }
-  to{
-    text-shadow:0 0 30px #25D366;
-  }
+  from{ text-shadow:0 0 10px #fff; }
+  to{ text-shadow:0 0 30px #25D366; }
 }
 
-/* BUTTON */
 .btn{
   margin-top:20px;
-  padding:15px 30px;
+  padding:15px 25px;
   background:#25D366;
   color:white;
   text-decoration:none;
   border-radius:10px;
-  font-size:18px;
 }
 
-/* SECTION */
 .section{
-  padding:40px 20px;
+  padding:40px;
 }
 
-img{
-  width:90%;
-  border-radius:15px;
-  margin:10px 0;
-}
-
-/* CARDS */
 .cards{
   display:flex;
   flex-wrap:wrap;
@@ -77,48 +57,14 @@ img{
   background:white;
   width:300px;
   border-radius:15px;
-  overflow:hidden;
   box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  overflow:hidden;
 }
 
 .card img{
   width:100%;
 }
 
-.card h3{
-  margin:10px;
-}
-
-.card p{
-  padding:0 10px;
-}
-
-/* SOCIAL */
-.social{
-  position:fixed;
-  left:10px;
-  top:40%;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-
-.social a{
-  background:black;
-  color:white;
-  padding:10px;
-  border-radius:50%;
-  text-decoration:none;
-}
-
-/* MAP */
-iframe{
-  width:100%;
-  height:300px;
-  border:0;
-}
-
-/* FOOTER */
 .footer{
   background:#222;
   color:white;
@@ -130,62 +76,32 @@ iframe{
 
 <body>
 
-<!-- HEADER -->
 <div class="header">
   <h1>Mahla IFRANE</h1>
-  <p>شقق للكراء اليومي في إفران</p>
-
-  <a class="btn" href="https://wa.me/212674425032">📞 احجز الآن</a>
-
-  <audio controls>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
-  </audio>
+  <a class="btn" href="https://wa.me/212674425032">احجز الآن</a>
 </div>
 
-<!-- SECTION -->
 <div class="section">
-  <h2>📸 صور</h2>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Ifrane_city.jpg">
-</div>
-
-<!-- APARTMENTS -->
-<div class="section">
-  <h2>🏡 الشقق</h2>
+  <h2>الشقق</h2>
 
   <div class="cards">
-
     <div class="card">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Ifrane_city.jpg">
       <h3>شقة وسط المدينة</h3>
-      <p>قريبة من كل الخدمات</p>
-      <a class="btn" href="https://wa.me/212660183251">احجز</a>
     </div>
 
     <div class="card">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Ifrane_lion.jpg">
-      <h3>شقة بإطلالة رائعة</h3>
-      <p>إطلالة جميلة</p>
-      <a class="btn" href="https://wa.me/212660183258">احجز</a>
+      <h3>شقة بإطلالة</h3>
     </div>
-
   </div>
 </div>
 
-<!-- SOCIAL -->
-<div class="social">
-  <a href="#">📘</a>
-  <a href="#">📸</a>
-</div>
+<iframe src="https://maps.google.com/maps?q=ifrane&output=embed"
+width="100%" height="300"></iframe>
 
-<!-- MAP -->
-<iframe src="https://maps.google.com/maps?q=ifrane&output=embed"></iframe>
-
-<!-- FOOTER -->
 <div class="footer">
-  <p>📞 212674425032</p>
-  <p>📞 212660183251</p>
-  <p>📞 212660183258</p>
-  <p>Mahla Ifrane © 2026</p>
+  <p>Mahla Ifrane</p>
 </div>
 
 </body>
