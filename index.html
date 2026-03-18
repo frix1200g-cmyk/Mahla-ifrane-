@@ -24,12 +24,23 @@ body{
 }
 
 .header h1{
-  font-size:90px;
-  animation: fadeIn 2s ease;
+  font-size:100px;
+  margin:0;
+  animation: glow 2s infinite alternate;
 }
 
 .header p{
   font-size:20px;
+}
+
+/* EFFECT */
+@keyframes glow{
+  from{
+    text-shadow:0 0 10px #fff;
+  }
+  to{
+    text-shadow:0 0 30px #25D366;
+  }
 }
 
 /* BUTTON */
@@ -43,11 +54,18 @@ body{
   font-size:18px;
 }
 
-/* SECTIONS */
+/* SECTION */
 .section{
-  padding:50px 20px;
+  padding:40px 20px;
 }
 
+img{
+  width:90%;
+  border-radius:15px;
+  margin:10px 0;
+}
+
+/* CARDS */
 .cards{
   display:flex;
   flex-wrap:wrap;
@@ -61,11 +79,6 @@ body{
   border-radius:15px;
   overflow:hidden;
   box-shadow:0 5px 15px rgba(0,0,0,0.2);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:scale(1.05);
 }
 
 .card img{
@@ -111,12 +124,6 @@ iframe{
   color:white;
   padding:20px;
 }
-
-/* ANIMATION */
-@keyframes fadeIn{
-  from{opacity:0; transform:translateY(-20px);}
-  to{opacity:1;}
-}
 </style>
 
 </head>
@@ -126,7 +133,8 @@ iframe{
 <!-- HEADER -->
 <div class="header">
   <h1>Mahla IFRANE</h1>
-  <p>شقق فاخرة للكراء اليومي في إفران</p>
+  <p>شقق للكراء اليومي في إفران</p>
+
   <a class="btn" href="https://wa.me/212674425032">📞 احجز الآن</a>
 
   <audio controls>
@@ -134,9 +142,15 @@ iframe{
   </audio>
 </div>
 
+<!-- SECTION -->
+<div class="section">
+  <h2>📸 صور</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Ifrane_city.jpg">
+</div>
+
 <!-- APARTMENTS -->
 <div class="section">
-  <h2>🏡 الشقق المتوفرة</h2>
+  <h2>🏡 الشقق</h2>
 
   <div class="cards">
 
@@ -150,7 +164,7 @@ iframe{
     <div class="card">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Ifrane_lion.jpg">
       <h3>شقة بإطلالة رائعة</h3>
-      <p>إطلالة على الطبيعة</p>
+      <p>إطلالة جميلة</p>
       <a class="btn" href="https://wa.me/212660183258">احجز</a>
     </div>
 
